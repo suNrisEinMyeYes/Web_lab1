@@ -1,0 +1,20 @@
+﻿@model WebApplication2.mocks.DataMock
+@{
+    ViewData["Title"] = "Injection";
+}
+
+<h1>Injection</h1>
+<div>
+
+    <p>
+        A = @Model.a <br />
+        B = @Model.b <br />
+        "+": @Model.AddFunc <br />
+        "-": @Model.SubFunc <br />
+        "*": @Model.MultFunc <br />
+
+        "/": @Model.DivFunc <br />
+
+    </p>
+
+</div>
