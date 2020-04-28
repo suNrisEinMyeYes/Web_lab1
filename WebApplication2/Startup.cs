@@ -26,9 +26,9 @@ namespace WebApplication2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<IRandomValues, DataMock>();
-            services.AddMvc(mvcOtions =>
+            services.AddMvc(mvcOptions =>
             {
-                mvcOtions.EnableEndpointRouting = false;
+                mvcOptions.EnableEndpointRouting = false;
             });
             
         }

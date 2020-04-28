@@ -8,14 +8,9 @@ namespace WebApplication2.Services
 {
     public interface IRandomValues
     {
-        public void RandomizeInts();
-
+       
+        public DataPass data { get; set; }
         
-
-        public int AddFunc { get; }
-        public int SubFunc { get; }
-        public int MultFunc { get; }
-        public int DivFunc { get; }
 
     }
 }

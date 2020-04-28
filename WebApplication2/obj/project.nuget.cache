@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7siqLrb1rcqTgzfGS9gmce+LGwDDyYsvz9C6AqcEYimaq9hGgiA9PeDcpVs22iZ2s1lUtEyA518T5shaHtjc+Q==",
+  "dgSpecHash": "I6fvQbGYVKCv1zF4LW60deJJb+AbMdr/j7SSpmQ4T3z9wv4I6a3mHuNzlMUv+SpPvDIuLFp25mnC5pDKfmoHVg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Артём\\source\\repos\\WebApplication2\\WebApplication2\\WebApplication2.csproj",
+  "projectFilePath": "C:\\projecta\\WebApplication2\\WebApplication2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Артём\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Артём\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

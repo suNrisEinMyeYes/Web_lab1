@@ -14,7 +14,8 @@ namespace WebApplication2.Controllers
     {
         private readonly IRandomValues _randomValues;
 
-        private DataMock mock = new DataMock();
+        //private DataMock mock = new DataMock();
+        private DataPass dataPass = new DataPass();
         public FuncContr(IRandomValues randomValues)
         {
             _randomValues = randomValues;
@@ -22,47 +23,21 @@ namespace WebApplication2.Controllers
 
         public IActionResult result()
         {
-            return View(mock);
+            return View(dataPass);
         }
 
         public IActionResult ViewDataResult()
         {
-            
 
-            ViewData["a"] = mock.a;
-            ViewData["b"] = mock.b;
-            ViewData["Add"] = mock.AddFunc;
-            ViewData["Sub"] = mock.SubFunc;
-            ViewData["Mult"] = mock.MultFunc;
-            if (mock.b == 0)
-            {
-                ViewData["Div"] = "Divide by zero!";
-            }
-            else
-            {
-                ViewData["Div"] = mock.DivFunc;
-            }
-            
+
+            ViewData["model"] = dataPass;
+           
             return View();
         }
         public IActionResult ViewBagResult()
         {
-            ViewBag.a = mock.a;
-            ViewBag.b = mock.b;
-            ViewBag.add = mock.AddFunc;
-            ViewBag.sub = mock.SubFunc;
-            ViewBag.mult = mock.MultFunc;
-            if (mock.b == 0)
-            {
-                ViewBag.div = "Divide by zero!";
-            }
-            else
-            {
-                ViewBag.div = mock.DivFunc;
-            }
-
+            ViewBag.model = dataPass;
             
-
             return View();
         }
         public IActionResult Injection()
