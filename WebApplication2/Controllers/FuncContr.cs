@@ -16,6 +16,7 @@ namespace WebApplication2.Controllers
 
         //private DataMock mock = new DataMock();
         private DataPass dataPass = new DataPass();
+        
         public FuncContr(IRandomValues randomValues)
         {
             _randomValues = randomValues;
@@ -42,7 +43,7 @@ namespace WebApplication2.Controllers
         }
         public IActionResult Injection()
         {
-            return View(_randomValues);
+            return View();
         }
     }
 }

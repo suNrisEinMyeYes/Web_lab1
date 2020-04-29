@@ -1,4 +1,5 @@
-﻿@model WebApplication2.mocks.DataMock
+﻿@using WebApplication2.Services;
+@inject IRandomValues randomValues
 @{
     ViewData["Title"] = "Injection";
 }
@@ -7,13 +8,13 @@
 <div>
 
     <p>
-        A = @Model.data.a <br />
-        B = @Model.data.b <br />
-        "+": @Model.data.AddFunc <br />
-        "-": @Model.data.SubFunc <br />
-        "*": @Model.data.MultFunc <br />
+        A = @randomValues.data.a <br />
+        B = @randomValues.data.b <br />
+        "+": @randomValues.data.AddFunc <br />
+        "-": @randomValues.data.SubFunc <br />
+        "*": @randomValues.data.MultFunc <br />
 
-        "/": @Model.data.DivFunc <br />
+        "/": @randomValues.data.DivFunc <br />
 
     </p>
 
